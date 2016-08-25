@@ -1,0 +1,3 @@
+[submodule "rplugin/python3/deoplete/urllib3"]
+	path = rplugin/python3/deoplete/urllib3
+	url = https://github.com/shazow/urllib3
