@@ -1,3 +1,6 @@
-[submodule "rplugin/python3/deoplete/urllib3"]
+[submodule "urllib3"]
 	path = rplugin/python3/deoplete/urllib3
-	url = https://github.com/shazow/urllib3
+	url = https://github.com/shazow/urllib3.git
+[submodule "ultrajson"]
+	path = rplugin/python3/deoplete/ujson
+	url = https://github.com/esnme/ultrajson.git
