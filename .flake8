@@ -1,0 +1,6 @@
+[flake8]
+exclude = .svn,CVS,.bzr,.hg,.git,__pycache,tests/*
+filename = *.py
+ignore = D100,D101,D102,D103,D104,D201D201,D202,D203,D204,E402,E123/E133,E226,E241/E242,H101,H301,H304,I100,I201
+max-line-length = 99
+max-complexity = 10
