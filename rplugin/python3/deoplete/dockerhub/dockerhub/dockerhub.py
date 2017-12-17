@@ -20,8 +20,7 @@ class DockerHub(object):
 
     def search(self, user):
         next = None
-        resp = self._request('repositories/{0}'.format(user)
-                             ).data.decode('utf8')
+        resp = self._request('repositories/{0}'.format(user)).data.decode('utf8')
 
         while True:
             if next:
