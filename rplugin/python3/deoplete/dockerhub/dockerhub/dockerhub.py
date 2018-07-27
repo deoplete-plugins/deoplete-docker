@@ -6,6 +6,7 @@ try:
     import ujson as json
 except ImportError:
     import json
+import certifi
 import urllib3
 
 
@@ -16,7 +17,9 @@ class DockerHub(object):
         self.url = url or '{0}/{1}'.format(
             'https://hub.docker.com', self.version
         )
-        self.http = urllib3.PoolManager()
+        self.http = urllib3.PoolManager(
+                cert_reqs='CERT_REQUIRED',
+                ca_certs=certifi.where())
 
     def _request(self, path):
         return self.http.request('GET', '{0}/{1}/'.format(self.url, path))
