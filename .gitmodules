@@ -4,3 +4,6 @@
 [submodule "ultrajson"]
 	path = rplugin/python3/deoplete/ujson
 	url = https://github.com/esnme/ultrajson.git
+[submodule "rplugin/python3/deoplete/certifi"]
+	path = rplugin/python3/deoplete/certifi
+	url = https://github.com/certifi/python-certifi

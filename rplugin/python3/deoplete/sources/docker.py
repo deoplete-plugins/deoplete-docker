@@ -9,6 +9,7 @@ from .base import Base
 from deoplete.util import load_external_module
 load_external_module(__file__, 'urllib3')
 load_external_module(__file__, 'dockerhub')
+load_external_module(__file__, 'certifi')
 from dockerhub.dockerhub import DockerHub
 
 KEYWORD = [
