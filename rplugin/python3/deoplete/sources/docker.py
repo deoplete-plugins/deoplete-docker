@@ -5,7 +5,7 @@
 import re
 import threading
 
-from .base import Base
+from deoplete.base.source import Base
 from deoplete.util import load_external_module
 load_external_module(__file__, 'urllib3')
 load_external_module(__file__, 'dockerhub')
